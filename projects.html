@@ -15,17 +15,18 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start;
+            min-height: 100vh;
         }
         .container {
             background: linear-gradient(135deg, #ffffff 30%, #f0f2f5 100%);
-            padding: 40px;
+            padding: 60px 40px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 900px;
             text-align: center;
+            margin-top: 20px;
         }
         h1 {
             color: #343a40;
@@ -99,7 +100,8 @@
         }
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
+                padding: 40px 20px;
+                margin-top: 10px;
             }
             h1 {
                 font-size: 28px;
@@ -119,7 +121,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Projects Page</h1>
+        <h1>Projects</h1>
         <p>
             Here are some of the notable projects I've worked on. Click on the buttons to view the detailed project documents.
         </p>
