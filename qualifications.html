@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifications</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+        }
+        .container h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+        .qualifications {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .qualification {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            width: 100%;
+            max-width: 700px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffffff; /* White background for each item */
+            gap: 15px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .qualification img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .qualification div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+        .qualification h2 {
+            font-size: 20px;
+            color: #333;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .qualification p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0 0;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .back-button:active {
+            transform: translateY(1px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .qualification {
+                flex-direction: column;
+                text-align: center;
+            }
+            .qualification img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Qualifications</h1>
+        <div class="qualifications">
+            <div class="qualification">
+                <img src="images/uwa.jpg" alt="University of Western Australia Logo">
+                <div>
+                    <h2>Masters of Information Technology</h2>
+                    <p>University of Western Australia</p>
+                </div>
+            </div>
+            <div class="qualification">
+                <img src="images/indusuni.png" alt="Indus University Logo">
+                <div>
+                    <h2>Bachelor of Computer Application (BCA)</h2>
+                    <p>Indus University, Gujarat, India</p>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>

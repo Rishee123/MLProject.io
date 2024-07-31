@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 1200px; /* Increased max-width for more space */
+        }
+        .container h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .certification-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Space items evenly */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .certification-item {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .certification-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .certification-item img {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .certification-item a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .certification-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Certifications</h1>
+        <div class="certification-grid">
+            <div class="certification-item">
+                <img src="images/talend.png" alt="Talend Logo">
+                <div>
+                    <a href="certificates/Talend.pdf" target="_blank">Talend Certification</a>
+                </div>
+            </div>
+            <div class="certification-item">
+                <img src="images/aws.png" alt="AWS Logo">
+                <div>
+                    <a href="certificates/AWS_foundation.pdf" target="_blank">AWS Foundation Certification</a>
+                </div>
+            </div>
+            <div class="certification-item">
+                <img src="images/deloitte.png" alt="Deloitte Logo">
+                <div>
+                    <a href="certificates/Anti_corruption.pdf" target="_blank">Global Anti-Corruption Certification</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
